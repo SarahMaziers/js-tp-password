@@ -6,7 +6,7 @@ const o_night={
     init(){
         document.documentElement.classList.add('js-enabled');
         const button=document.querySelector('.showPass')
-        button.addEventListener('click',montre)
+        button.addEventListener('click',this.montre)
     },
     montre() {
         const input = document.querySelector('#password');
@@ -18,7 +18,7 @@ const o_night={
         }
     }
 }
-o_night.montre();
+
 o_night.init();
 
 
